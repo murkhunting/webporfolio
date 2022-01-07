@@ -1,0 +1,111 @@
+.home {
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(114, 154, 165);
+  background: linear-gradient(
+    -40deg,
+    rgb(114, 114, 165) 25%,
+    rgb(114, 134, 165) 40%,
+    rgb(114, 154, 165) 100%
+  );
+  .marc {
+    position: relative;
+    height: 100vh;
+    font-size: 140px;
+    font-weight: 700;
+    color: white;
+
+    .name {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 100px 0 0 180px;
+      transition: all 0.5s ease-out;
+      width: 50%;
+      animation: fadeInDown;
+      animation-duration: 1s;
+      cursor: default;
+
+      span {
+        cursor: pointer;
+        transition: 0.5s;
+      }
+
+      span:hover {
+        transform: scale(1.1);
+        text-shadow: 11px 8px 7px rgb(78, 78, 78);
+      }
+      h6 {
+        font-size: 25px;
+        color: rgba(114, 154, 165, 0);
+        transition: 0.5s;
+      }
+
+      .details:hover + h6 {
+        color: white;
+        // text-shadow: 7px 5px 5px rgb(66, 66, 66);
+      }
+    }
+
+    .hoverme {
+      font-size: 16px;
+      font-weight: 400;
+      width: 600px;
+      height: 460px;
+      position: absolute;
+      bottom: 0;
+      right: 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      width: 600px;
+      margin-top: 15%;
+      transition: 1s;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 350px;
+      margin-left: 10px;
+      z-index: 500;
+      transition: 1s;
+      color: black;
+    }
+
+    img:hover + h1 {
+      color: lightgray;
+    }
+
+    .separator {
+      width: 96%;
+      height: 1px;
+      background-color: rgb(50, 50, 50);
+      position: absolute;
+      left: 50%;
+      bottom: -1px;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .about {
+    height: 100vh;
+    border-bottom: 1px solid rgb(50, 50, 50);
+  }
+  .skills {
+    height: 100vh;
+    border-bottom: 1px solid rgb(50, 50, 50);
+  }
+  .contact {
+    height: 100vh;
+  }
+}

@@ -10,8 +10,10 @@ const Home = () => {
     <div className="home">
       <div className="marc">
         <div className="name animate__fadeInDown">
-          <span>Hi, I'm</span>
-          <span className="details">Marc</span>
+          <div className="nombre">
+            <span>Hi, I'm</span>
+            <span className="details">Marc</span>
+          </div>
           <h6>- Web Developer - Front-end - UX/UI -</h6>
         </div>
 
